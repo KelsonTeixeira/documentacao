@@ -1,27 +1,26 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+
+import WordpressCollapse from './WordpressCollapse';
+import ComponentsCollapse from './ComponentsCollapse';
+import JavaScriptCollapse from './JavaScript';
+import PHP from './PHP';
+import Python from './Python';
 
 const SideBar = () => (
-  <nav className="navbar flex-column navbar-dark fixed-top bg-dark col-2 h-100 px-2 py-4">
-    <ul className="navbar-nav">
-      <li className="nav-item">
-        <NavLink className="nav-link"
-        exact to='/'
-        >Home</NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink className="nav-link"
-        exact to='/wordpress'
-        >Wordpress</NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink className="nav-link"
-        exact to='/components'
-        >Componentes</NavLink>
-      </li>
-    </ul>
-
-  </nav>
+  <div className="sidebar fixed-top h-100">
+    <nav 
+      className="navbar flex-column align-items-start navbar-light 
+        h-100 pl-4 py-4 shadow-lg border-right"
+      >
+      <ul className="navbar-nav">
+        <WordpressCollapse />
+        <ComponentsCollapse />
+        <JavaScriptCollapse />
+        <PHP />
+        <Python />
+      </ul>
+    </nav>
+  </div>
 );
 
 export default SideBar;

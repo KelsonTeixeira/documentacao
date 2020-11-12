@@ -13,6 +13,7 @@ body{
   font-family: 'Montserrat', sans-serif;
   height: 100vh;
   width: 100vw;
+  padding-top: 60px;
 }
 
 #root{
@@ -20,24 +21,23 @@ body{
   width: 100%;
 }
 
-/* pre {
-  background-color: #2c3e50;
-  color: #ff79c6;
-  max-width: 700px;
+.mark{
+  background-color: #dddddd;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-pre .string{
-  color: #e7de79;
+.navbar{
+  overflow-y: scroll;
 }
 
-pre .value{
-  color: #1abc9c;
+.bar{
+  background-color: #4A7B9D;
+  z-index: 999;
+  height: 60px;
 }
 
-pre .normal{
-  color: #fff;
+.sidebar{
+  padding-top: 60px;
+  width: 250px;
+  z-index: 998;
 }
-
-pre .var{
-  color: #3498db;
-} */
